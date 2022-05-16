@@ -1,0 +1,27 @@
+@import url("./variables.css");
+
+.welcome_text {
+    font-size: var(--font-size-2);
+    color: var(--text-2)
+}
+.indicators {
+    display: flex;
+    justify-content: space-between;
+}
+.indicator_box {
+    width: 12.5rem;
+    height: 8rem;
+    margin-top: 2rem;
+    padding: 1.2rem;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--drop-shadow);
+}
+.label {
+    font-size: var(--font-size-2);
+    margin-bottom: 0.5rem;
+}
+.amount {
+    font-size: var(--font-size-2);
+}

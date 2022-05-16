@@ -1,0 +1,45 @@
+@import url("variables.css");
+
+.nav_container {
+    position: fixed;
+    min-width: 20rem;
+    height: 100vh;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+.nav_logo_container {
+    display: flex;
+    justify-content: center;
+}
+.nav_logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.nav {
+    margin-top: 10rem;
+}
+.nav_item {
+    margin-bottom: 1rem;
+    width: 15rem;
+    padding: var(--button-padding);
+    color: var(--secondary);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    transition: all 0.5s;
+}
+.nav_item:hover {
+    cursor: pointer;
+}
+.nav_item_active {
+    color: var(--white);
+    background-color: var(--primary);
+    box-shadow: var(--drop-shadow);
+    transition: all 0.5s;
+}
+.sign_out {
+    position: absolute;
+    bottom: 1.5rem;
+    padding: var(--button-padding);
+    color: var(--secondary);
+}

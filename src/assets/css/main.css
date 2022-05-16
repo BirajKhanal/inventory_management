@@ -1,0 +1,74 @@
+@import url("variables.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.main_container {
+    display: flex;
+}
+.main_pages {
+    min-width: 72rem;
+    margin-left: 20rem;
+    padding-top: 4rem;
+    padding-right: 1rem;
+}
+.button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--drop-shadow);
+    transition: all 1s;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: var(--positive);
+    transition: all 1s;
+}
+.back_button {
+    cursor: pointer;
+}
+.action_button_container {
+    display: flex;
+}
+.edit_button {
+    width: fit-content;
+    margin-right: 0.2rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    color: var(--white);
+    background-color: var(--primary);
+    cursor: pointer;
+}
+.delete_button {
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    color: var(--white);
+    background-color: var(--negative);
+    cursor: pointer;
+}
+.search_container {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.datatable_container {
+    box-shadow: var(--drop-shadow);
+}
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
