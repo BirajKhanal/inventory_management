@@ -4,11 +4,11 @@ import {
 } from '@mui/icons-material'
 import { Datatable } from 'components/Datatable';
 
-interface props {
+interface Props {
     setShowForm:(args: boolean) => void
 }
 
-export const Purchase:React.FC<props> = ({setShowForm}) => {
+export const Purchase:React.FC<Props> = ({setShowForm}) => {
     const rows = [
         {id: 1, Name: 'Signature', Category: '750ml', Box: 2, Unit: 1, Total: 5000, Customer:'User Name', 'Transcation Type':'Credit', 'Credit Amount': 2000, 'Debit Amount': 0, Date: '2022/05/12', 'Resolve Date': '',}
     ]

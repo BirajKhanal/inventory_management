@@ -4,11 +4,11 @@ import {
 } from '@mui/icons-material'
 import { Datatable } from 'components/Datatable';
 
-interface props {
+interface Props {
     setShowForm:(args: boolean) => void
 }
 
-export const InStock:React.FC<props> = ({setShowForm}) => {
+export const InStock:React.FC<Props> = ({setShowForm}) => {
     const rows = [
         {id: 1, Name: 'Signature', Category: '750ml', Box: 2, Unit: 1, 'Current Price': 500},
         {id: 2, Name: 'Jack Daniels', Category: '750ml', Box: 2, Unit: 1, 'Current Price': 500},

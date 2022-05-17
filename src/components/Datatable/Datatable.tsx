@@ -9,7 +9,7 @@ import {
 } from '@mui/icons-material'
 import { DataGrid } from '@mui/x-data-grid'
 
-interface filter {
+interface Filter {
     id: number,
     Name: string,
     Category: string,
@@ -25,21 +25,21 @@ interface filter {
     'Resolve Date'?:string
 }
 
-interface props {
+interface Props {
     columns: {
         field: string
     }[]
-    rowData: filter[]
+    rowData: Filter[]
 }
 
-export const Datatable:React.FC<props> = ({columns, rowData}) => {
+export const Datatable:React.FC<Props> = ({columns, rowData}) => {
     const [data, setData] = React.useState(rowData)
 
     const [rows, setRows] = React.useState<{}[]>()
     const [pageSize, setPageSize] = React.useState(5)
 
     const search = (searchVal:string) => {
-        let filtered:filter[] = data.filter((items) => {
+        let filtered:Filter[] = data.filter((items) => {
             return Object.values(items.Name).join('').toLowerCase().includes(searchVal.toLowerCase())
         })
         setRows(filtered)

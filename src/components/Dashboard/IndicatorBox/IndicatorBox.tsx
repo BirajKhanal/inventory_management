@@ -1,12 +1,12 @@
 import React from 'react'
 
-interface props {
+interface Props {
   label:string,
   amount:number,
   color:string
 }
 
-export const IndicatorBox:React.FC<props> = ({label, amount, color}) => {
+export const IndicatorBox:React.FC<Props> = ({label, amount, color}) => {
   return (
     <div className="indicator_box" style={{ backgroundColor: color}}>
         <p className="label">{label}</p>

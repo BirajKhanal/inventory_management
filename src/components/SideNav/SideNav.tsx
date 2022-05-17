@@ -3,11 +3,11 @@ import React from 'react'
 import "assets/css/sidenav.css"
 // import logo from "assets/image/logo.png"
 
-interface props {
+interface Props {
     setNavSelected:(arg: string) => void
 }
 
-export const SideNav:React.FC<props> = ({setNavSelected}) => {
+export const SideNav:React.FC<Props> = ({setNavSelected}) => {
 
     const navSelect = (input:number) => {
         let listItems = document.getElementsByClassName("nav_item")

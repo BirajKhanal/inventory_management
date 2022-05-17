@@ -1,11 +1,11 @@
 import React from 'react'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-interface props {
+interface Props {
     setShowForm:(args: boolean) => void
 }
 
-export const InStockForm:React.FC<props> = ({setShowForm}) => {
+export const InStockForm:React.FC<Props> = ({setShowForm}) => {
   return (
     <div>
         <div className="back_button"
